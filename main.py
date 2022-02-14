@@ -2,7 +2,7 @@ import pygame
 import sys
 
 from settings import *
-from spritesheet import Spritesheet
+from sprite_sheet import Spritesheet
 
 
 
@@ -16,7 +16,7 @@ class Game:
         pygame.display.set_caption('The Adventures of Bryce')
         self.clock = pygame.time.Clock()
 
-        my_spritesheet = Spritesheet('spritesheets/slime_spritesheet.png')
+        my_spritesheet = Spritesheet('sprite_sheets/slime_sprite_sheet.png')
         self.slime = [my_spritesheet.parse_sprite('slime_idle_0.png'), my_spritesheet.parse_sprite('slime_idle_1.png')]
 
     def run(self):
